@@ -50,9 +50,9 @@ const config = {
 		'https://cdn.kernvalley.us/css/normalize/normalize.css',
 		'https://cdn.kernvalley.us/css/animate.css/animate.css',
 		'/img/icons.svg',
-		'/img/apple-touch-icon.png',
-		'/img/icon-192.png',
-		'/img/favicon.svg',
+		// '/img/apple-touch-icon.png',
+		// '/img/icon-192.png',
+		// '/img/favicon.svg',
 		/* Social Icons for Web Share API shim */
 		'https://cdn.kernvalley.us/img/octicons/mail.svg',
 		'https://cdn.kernvalley.us/img/logos/facebook.svg',

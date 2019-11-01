@@ -2,7 +2,7 @@
 [build]
   base = "./"
   publish = "./_site/"
-  command = "npm run build && npm run build:site"
+  command = "npm run build:site"
   [build.environment]
     GIT_LFS_ENABLED = "1"
 [[headers]]
@@ -22,7 +22,7 @@
       default-src 'self';
       base-uri 'self';
       img-src *;
-      script-src 'self' https://cdn.kernvalley.us;
+      script-src 'self' https://cdn.kernvalley.us https://cdn.polyfill.io/v2/;
       style-src 'self' 'unsafe-inline' https://cdn.kernvalley.us;
       connect-src 'self' https://cdn.kernvalley.us https://api.kernvalley.us  https://baconipsum.com/;
       worker-src: 'self';
@@ -33,7 +33,7 @@
       manifest-src 'self';
       form-action 'self';
       reflected-xss block;
-      report-uri https://api.kernvalley.us/Errors/CSP/
+      report-uri https://api.kernvalley.us/Errors/CSP/;
       block-all-mixed-content;
       upgrade-insecure-requests;
       disown-opener;'''
