@@ -2,7 +2,7 @@
 [build]
   base = "./"
   publish = "./_site/"
-  command = "git submodule update --init && npm run build && npm run build:site && ls -lah img/"
+  command = "npm install && ls -lah img/octicons/"
   [build.environment]
     GIT_LFS_ENABLED = "1"
 [[headers]]
