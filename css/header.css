@@ -1,3 +1,4 @@
 #header {
-	background-image: url("/img/neon.svg");
+	background-image: var(--header-background);
+	background-position: top center;
 }

@@ -1,6 +1,8 @@
 ---
 ---
 :root {
-	background: {{ site.data.theme.dark.background }};
-	color: {{ site.theme-color }};
+	--accent-color: {{ site.theme-color }};
+	--button-background: var(--accent-color);
+	--button-active-background: var(--button-background);
+	--header-background: url("/img/raster/background.jpg");
 }

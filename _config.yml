@@ -1,8 +1,8 @@
 author: Chris Zuber
-title: Jekyll Template Demo
-# url: ''
+title: Kernville Cowork
+url: 'https://sleepy-perlman-13dfdd.netlify.com/'
 markdown: kramdown
-version: 1.0.0
+version: 1.0.0-a1
 timezone: America/Los_Angeles
 lang: en
 dir: ltr
@@ -14,34 +14,26 @@ robots: 'follow, index'
 referrer: origin-when-cross-origin
 manifest: /manifest.json
 tiles-config: /browserconfig.xml
-# service_worker:
+service_worker: '/service-worker.js'
 og-type: website
-description: "A template repository for Jekyll sites, including skeleton JS, CSS, SVGs, fonts, etc."
+description: "A blog for Kernville Cowork."
 mobile-web-app-capable: true
 # canonical: ''
 keywords:
-- jekyll
-- static
-- template
-- github
-- CSS3
-- HTML5
-- responsive design
-- progressive web app
-- pwa
-- ecmascript
-- javascript
-- es6
+- cowork
+- kernville
+- kern valley
+-
 repository:
   username: shgysk8zer0
-  project: jekyll-template
-  title: Jekyll Template
+  project: cowork-blog
+  title: Kernville Cowork Blog
 # twitter:
 feed:
   url: /feed.rss
   type: application/rss+xml
 icons: '/img/icons.svg'
-theme-color: '#528ff9'
+theme-color: '#5d7149'
 background-color: '#242424'
 # discus-identifier:
 # google-analytics:
@@ -58,6 +50,9 @@ scripts:
     type: module
     async: true
   production:
+  - src: 'https://unpkg.com/@webcomponents/custom-elements@1.2.4/custom-elements.min.js'
+    type: 'test/javascript'
+    crossorigin: anonymous
   - src: 'https://cdn.polyfill.io/v2/polyfill.min.js'
     type: text/javascript
     crossorigin: anonymous
